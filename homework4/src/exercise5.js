@@ -16,11 +16,11 @@ function minAndMaxValue(inputArray){
         }
         console.log("max" + max);
         console.log("min" +min);
-        sum = sum + inputArray[counter];
+        //sum = sum + inputArray[counter];
         counter++;
         
     }
-    return sum;
+    return max+min;
     
 }
 

@@ -1,10 +1,17 @@
 let a = 1;
+let empty = "";
 while(a >= 1 && a<=20){
     if (a % 2 ==0){
-        console.log(`${a} \n`);
+        empty += a;
+        empty += "\n";
+        //console.log(`${a} \n`);
     } else  {
-        console.log(`\"\" `);
+        empty += a;
+        empty += " ";
+       // console.log(`\"\" `);
     } 
-     a++;   
+     a++;  
+
     
  }
+ console.log(empty);
