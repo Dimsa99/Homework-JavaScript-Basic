@@ -1,10 +1,23 @@
-let firstDiv = document.getElementById("myTitle").innerText="New Text";
-let firstParagraph= document.getElementsByClassName("paragraph").innerText="New hard exercise";// ne znam ni vaka isto zasto nejke
-// firstParagraph[1].innerText ="A new hard exercise"----> ne mi e jasno zasto vaka ne mi iskaca;
-// let secondParagraph = document.getElementsByClassName("anotherDiv");
-// secondParagraph.children[0].innerText = " asda sd"
-// secondParagraph.children[1].innerText ="Also bla bla bla";
-let secondParagraph = paragraphs[1];
-secondParagraph += + "This is changed";
-let lastDiv = document.querySelector("div")[2].firstChild.innerText="This is changed";
+let firstDiv = document.getElementById("myTitle");
+console.log(firstDiv.innerText);
+firstDiv.innerText="New title";
+let firstParagraph= document.querySelector(".paragraph");
+console.log(firstParagraph.innerText);
+firstParagraph.innerText="This is a new exercise, it's pretty hard";
+let secondParagraph = document.getElementsByClassName('second')[0];
+console.log(secondParagraph);
+secondParagraph.innerText = "A new text from myself!"
+document.querySelector("text").innerText = "bla bla bla";
+let lastDiv = document.getElementsByTagName("body")[0];
+let firstHeader = lastDiv.getElementsByTagName("h1");
+firstHeader.innerText = "Now i also changed this !";// samo ova ne mi funkcionira i stvarno ne znam zasto
+let secondHeader = lastDiv.getElementsByTagName("h3")[0];
+secondHeader.innerText = "Hehe this is also changed";
+
+
+
+
+
+
+
 
